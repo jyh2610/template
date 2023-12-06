@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "cuchencdn.wisacdn.com",
       },
+      {
+        protocol: "https",
+        hostname: "th.bing.com",
+      },
     ],
   },
 };

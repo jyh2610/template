@@ -57,7 +57,7 @@ function TagFrame() {
 
   //#ff7e12
   return (
-    <div className="w-1/3">
+    <div className=" w-1/3">
       <p className="font-bold text-2xl mb-7">라이프 키워드 맞춤 제품 찾기</p>
       <div className="border-4 border-solid border-[#ff7e12] rounded-[23px] p-8 space-y-10">
         <p>

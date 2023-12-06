@@ -1,8 +1,8 @@
 export const Section = () => {
   return (
-    <div className="h-[640px]">
+    <div className="h-[640px] w-full">
       <div className="relative h-[640px]">
-        <div className="absolute w-screen h-[640px] top-0 left-0 bg-[url('https://dld3l66jf7t9m.cloudfront.net/images/ani_slide_img_01.png')] bg-cover bg-[50%_50%]">
+        <div className="w-full h-[640px] bg-[url('https://cuchencdn.wisacdn.com/_data/banner/user_group_banner/sowon_kor_renewal/61/56fb02a5eda11c90ff8d79d2ee2e98a8.jpg')] bg-cover bg-[50%_50%]">
           <div className="absolute w-[204px] h-[78px] top-[164px] left-[115px] [font-family:'Inter-Medium',Helvetica] font-medium text-black text-[31.3px] tracking-[-1.50px] leading-[44.5px]">
             똑똑! 연아의 픽<br />
             brain 밥솥

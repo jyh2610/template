@@ -1,10 +1,21 @@
+/* eslint-disable @next/next/no-img-element */
 import type { itemType } from "@/contants/mdPick";
+
+import "./styles.css";
 
 function ListItem({ item }: { item: itemType }) {
   return (
-    <div className="w-64">
-      <div className="w-full h-96">
-        <img className="w-full h-full" src="https://dld3l66jf7t9m.cloudfront.net/images/ani_slide_img_01.png" alt="list-img" />
+    <div className="w-[calc(100%/6_-_2rem)] ">
+      <div className="w-full">
+        <div className="w-full h-96 container relative">
+          <img className="w-full h-full object-cover  image" src={item.src} alt="list-img" />
+          <div className="middle absolute inset-0 flex justify-center items-center transition-opacity opacity-0">
+            <div className="text text-white text-center text-lg p-4">
+              주문폭주로 배송지연
+              <button className="bg-white rounded-full">자세히 보기</button>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="py-4 px-1">
         <p className="font-normal text-[#b39579] text-[11px] tracking-[-0.35px] leading-[20px] whitespace-normal">{item.title}</p>

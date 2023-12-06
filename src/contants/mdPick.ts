@@ -13,7 +13,7 @@ export interface itemType {
 export const mdPickData = [
   {
     id: 1,
-    src: "https://dld3l66jf7t9m.cloudfront.net/images/ani_slide_img_01.png",
+    src: "https://th.bing.com/th/id/OIG.0Sk9xOQEVibwQt_8k4kB?pid=ImgGn",
     title: "CRH-TWS1010MW",
     contents: "NEW 쿠첸 브레인 풀스텐 듀얼프레셔 10인용 IH전기압력밥솥 퓨어화이트",
     events: "기존 브레인에서 NEW 색상 출시!",
@@ -25,7 +25,7 @@ export const mdPickData = [
   {
     id: 2,
     title: "CRH-TWS1010MW",
-    src: "https://dld3l66jf7t9m.cloudfront.net/images/ani_slide_img_01.png",
+    src: "https://th.bing.com/th/id/OIG.tN3VDKU9rDWsa2sYrkPB?w=1024&h=1024&rs=1&pid=ImgDetMain",
     contents: "NEW 쿠첸 브레인 풀스텐 듀얼프레셔 10인용 IH전기압력밥솥 퓨어화이트",
     events: "기존 브레인에서 NEW 색상 출시!",
     price: "490,000원",

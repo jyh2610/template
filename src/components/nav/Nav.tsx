@@ -3,7 +3,7 @@ import NavBody from "./NavBody";
 
 function Nav() {
   return (
-    <div>
+    <div className="w-screen fixed z-50">
       <LoginLine />
       <NavBody />
     </div>

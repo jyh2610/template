@@ -1,3 +1,9 @@
+import { Dropdown } from "antd";
+
+import HamburgerDrop from "./HamburgerDrop";
+
+import type { MenuProps } from "antd";
+
 /* eslint-disable @next/next/no-img-element */
 function NavBody() {
   const navItems = [
@@ -12,22 +18,43 @@ function NavBody() {
     { label: "주방/생활가전", left: "1214px" },
     { label: "소모품/기타", left: "1294px" },
   ];
-
+  const items: MenuProps["items"] = [
+    {
+      label: <div>123123</div>,
+      key: "0",
+    },
+    {
+      label: <div>123123</div>,
+      key: "1",
+    },
+    {
+      label: <div>123123</div>,
+      key: "2",
+    },
+  ];
   const renderNavItems = () => {
     return navItems.map((item, idx) => (
-      <div
-        key={idx}
-        className={` h-[16px] [font-family:'Inter',Helvetica] font-bold text-black text-lg text-center tracking-[0] leading-[16px] whitespace-nowrap`}
-        style={{ background: item.image }}
-      >
-        {item.label}
-      </div>
+      <Dropdown key={idx} menu={{ items }} placement="bottom" trigger={["click"]}>
+        <div
+          className={` h-[16px] [font-family:'Inter',Helvetica] font-bold text-black text-lg text-center tracking-[0] leading-[16px] whitespace-nowrap`}
+          style={{ background: item.image }}
+        >
+          {item.label}
+        </div>
+      </Dropdown>
     ));
   };
 
   return (
-    <div className="flex justify-around h-20">
-      <div className="w-[180px] h-[30px] bg-[url(https://c.animaapp.com/i7HG4gw9/img/heading-1---link---logo-png@2x.png)] bg-cover bg-[50%_50%] my-auto" />
+    <div className="flex justify-around h-20 bg-white">
+      <div className="flex items-center">
+        <HamburgerDrop />
+        <img
+          src="https://c.animaapp.com/i7HG4gw9/img/heading-1---link---logo-png@2x.png"
+          alt="logo"
+          className="ml-2 pb-2 m-auto w-[180px] h-[40px] object-contain"
+        />
+      </div>
       <div className="flex items-center gap-8">{renderNavItems()}</div>
       <div className="flex">
         <img className=" w-[40px]" alt="Nav list item link" src="https://c.animaapp.com/gilqNkUp/img/nav---list---item---link-2.svg" />
